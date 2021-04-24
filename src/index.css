@@ -1,13 +1,71 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family:"Roboto";
+  background-color: rgb(189, 232, 253);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.city{
+  z-index: 2;
+  text-align: center;
+  margin-top:55px;
+  font-size: 2rem;
+  position: relative;
+}
+.tmp{
+  z-index:2;
+  font-weight: bolder;
+  margin-top: 5px;
+  text-align: center;
+  position: relative;
+}
+.heading{
+  z-index:2;
+  text-align: center;
+  font-size: 50px;
+  margin:10px;
+  z-index:1;
+  position: relative;
+}
+.pic{
+  z-index:2;
+  width:100%;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  margin-top: 25px;
+}
+.pic img{
+  z-index: 2;
+  height:100%;
+  width: 100%;
+}
+
+.bg{
+  z-index:0;
+  position: absolute;
+  height:510px;
+  top: 0%;
+  width:100%;
+  left:5%;
+}
+
+.bg img{
+  z-index:0;
+  height:520px;
+  top:-100%;
+  width:90%;
+  border-radius: 20px;
+}
+
+.content{
+  z-index: 2;
+}
+
+#root{
+  transform: scale(0);
+  animation: anim 250ms ease-in-out forwards;
+}
+
+@keyframes anim{
+  0%{transform: scale(0);}
+  100%{transform: scale(1);}
 }
